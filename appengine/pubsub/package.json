@@ -1,10 +1,10 @@
 {
   "name": "appengine-pubsub",
-  "description": "Node.js Google Cloud PubSub sample for Google App Engine",
+  "description": "Node.js Google Cloud PubSub ",
   "version": "0.0.1",
   "private": true,
   "license": "Apache Version 2.0",
-  "author": "Google Inc.",
+  "author": "Jose Ricardo Caicedo Porras jose.caicedo1@unmsm.edu.pe",
   "engines": {
     "node": "14.x.x"
   },

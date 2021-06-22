@@ -1,21 +1,3 @@
-// Copyright 2017, Google, Inc.
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//    http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-// NOTE:
-// This app can only be fully tested when deployed, because
-// Pub/Sub requires a live endpoint URL to hit. Nevertheless,
-// these tests mock it and partially test it locally.
-
 'use strict';
 
 const assert = require('assert');
@@ -127,8 +109,6 @@ describe('gae_flex_pubsub_auth_push', () => {
         },
       })
       .expect(200);
-
-    // Make sure the message is visible on the home page
     await requestObj
       .get('/')
       .expect(200)
